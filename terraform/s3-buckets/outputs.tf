@@ -1,17 +1,19 @@
-variable "bucket1_name" {
-  description = "Name of the first S3 bucket"
-  type        = string
-  default     = "s3-bucket-1-thejas-20261116"
+output "bucket1_id" {
+  description = "ID of the first S3 bucket"
+  value       = aws_s3_bucket.bucket1.id
 }
 
-variable "bucket2_name" {
-  description = "Name of the second S3 bucket"
-  type        = string
-  default     = "s3-bucket-2-thejas-20261116"
+output "bucket1_arn" {
+  description = "ARN of the first S3 bucket"
+  value       = aws_s3_bucket.bucket1.arn
 }
 
-variable "environment" {
-  description = "Environment tag for the buckets"
-  type        = string
-  default     = "dev"
+output "bucket2_id" {
+  description = "ID of the second S3 bucket"
+  value       = aws_s3_bucket.bucket2.id
+}
+
+output "bucket2_arn" {
+  description = "ARN of the second S3 bucket"
+  value       = aws_s3_bucket.bucket2.arn
 }
