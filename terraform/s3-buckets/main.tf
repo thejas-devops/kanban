@@ -2,7 +2,7 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-resource "aws_s3_bucket" "buckte1" {
+resource "aws_s3_bucket" "bucket1" {
   bucket = "s3-bucket-1-thejas-202611"
 
   tags = {
