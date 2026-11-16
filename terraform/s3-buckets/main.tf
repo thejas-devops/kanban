@@ -2,8 +2,8 @@ provider "aws" {
   region = "ap-south-1"
 }
 
-resource "aws_s3_bucket" "buckt1" {
-  bucket = "s3-bucket-1-thejas"
+resource "aws_s3_bucket" "buckte1" {
+  bucket = "s3-bucket-1-thejas-202611"
 
   tags = {
     Name        = "s3-bucket"
@@ -18,8 +18,8 @@ resource "aws_s3_bucket_versioning" "bucket1_versioning" {
   }
 }
 
-resource "aws_s3_bucket" "buckt2" {
-  bucket = "s3-bucket-2-thejas"
+resource "aws_s3_bucket" "buckte2" {
+  bucket = "s3-bucket-2-thejas-202611"
 
   tags = {
     Name        = "s3-bucket"
